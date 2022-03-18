@@ -7,7 +7,6 @@ attribute_setting.forEach((attribute) => {
 });
 
 const icon_setting = document.querySelectorAll(".btn-icon");
-console.log(icon_setting)
 icon_setting.forEach((icon_setter) => {
   if (
     icon_setter.classList.contains("btn-icon") &&
@@ -16,8 +15,6 @@ icon_setting.forEach((icon_setter) => {
     icon_setter.innerHTML =
       `<i class="${icon_setter.getAttribute("data-icon")}"></i>` +
       icon_setter.innerHTML;
-  } else {
-    console.log("first");
   }
 });
 
